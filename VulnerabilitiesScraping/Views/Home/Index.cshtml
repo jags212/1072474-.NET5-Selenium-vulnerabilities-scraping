@@ -1,0 +1,62 @@
+﻿@model ScrapValue
+<html>
+<head>
+    <title>Hackerrank Wordpress Vulnerabilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/index.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.esm.js"
+            type="module"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        .paragraph p {
+            font-size: 0.95em;
+            text-align: justify;
+        }
+
+        table tbody tr td {
+            padding: 16px;
+        }
+
+        strong {
+            color: Green
+        }
+    </style>
+</head>
+<body>
+    <h8k-navbar fixed header="Hackerrank Wordpress Vulnerabilities"></h8k-navbar>
+    <div class="mx-auto w-50 mt-100 paragraph">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+
+    <!--WP Vulnerabilities-->
+    <div align="center">
+        <table>
+            <tr>
+                <th align="center">CVE ID</th>
+                <th align="center">Publish Date</th>
+                <th align="center">Update Date</th>
+                <th align="center">Score</th>
+                <th align="center">WordPress Version</th>
+            </tr>
+            @for (int i = 1; i <= Model.versionSeed; i++)
+            {
+                for (int j = 1; j <= Model.rowSeed; j++)
+                {
+                    <tr>
+                        <td align="center">@(i + "" + j)</td>
+                        <td align="center">publish_date</td>
+                        <td align="center">update_date</td>
+                        <td align="center">
+                            <div align="center" style="background-color:#ffe000">@(j + "" + i)</div>
+                        </td>
+                        <td align="center">@i</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+    <!--WP Vulnerabilities-->
+
+    <h8k-navbar header="2001-2021"></h8k-navbar>
+</body>
+</html>

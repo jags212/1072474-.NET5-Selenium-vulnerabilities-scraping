@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerabilitiesScraping", "VulnerabilitiesScraping.csproj", "{4F2CB89A-DA39-42C3-A888-F82241A1672C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerabilitiesScrapingTests", "..\VulnerabilitiesScrapingTests\VulnerabilitiesScrapingTests.csproj", "{8D32227F-4E3C-48F4-9C60-88A15FB2A106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F2CB89A-DA39-42C3-A888-F82241A1672C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2CB89A-DA39-42C3-A888-F82241A1672C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2CB89A-DA39-42C3-A888-F82241A1672C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2CB89A-DA39-42C3-A888-F82241A1672C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D32227F-4E3C-48F4-9C60-88A15FB2A106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D32227F-4E3C-48F4-9C60-88A15FB2A106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D32227F-4E3C-48F4-9C60-88A15FB2A106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D32227F-4E3C-48F4-9C60-88A15FB2A106}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9845E1C-8557-46B1-9044-81A90F45DE9C}
+	EndGlobalSection
+EndGlobal

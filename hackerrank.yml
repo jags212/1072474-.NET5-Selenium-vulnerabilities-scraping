@@ -1,0 +1,18 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - VulnerabilitiesScraping/*
+    - VulnerabilitiesScrapingTests/TestSetUp/*
+  scoring:
+    command: bash env/install.sh && dotnet build && dotnet test --logger xunit --results-directory ./reports/
+    files:
+      - reports/TestResults.xml
+  ide_config:
+    default_open_files:
+      - VulnerabilitiesScrapingTests/VulnerabilitiesImplementation.cs
+    project_menu:
+      run: bash env/install.sh && cd VulnerabilitiesScraping && dotnet run 
+      install: bash env/install.sh && dotnet build
+      test: bash env/install.sh && dotnet build && dotnet test --logger xunit --results-directory ./reports/
+      
